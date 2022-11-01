@@ -4,7 +4,29 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="icons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#1e5a32" />
+    <meta name="msapplication-TileColor" content="#1e5a32" />
+    <meta name="theme-color" content="#ffffff" />
     <title>METHED.MUSIC - музыка для вас!</title>
+    <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
     <header class="header">
@@ -62,8 +84,8 @@
             />
           </div>
           <div class="track__info track-info">
-            <p class="track__title">Save your tears</p>
-            <p class="track__artist">The Weeknd</p>
+            <p class="track-info__title">Save your tears</p>
+            <p class="track-info__artist">The Weeknd</p>
           </div>
         </button>
         <button class="catalog__item track">
@@ -77,8 +99,8 @@
             />
           </div>
           <div class="track__info track-info">
-            <p class="track__title">Follow you</p>
-            <p class="track__artist">Imagine Dragons</p>
+            <p class="track-info__title">Follow you</p>
+            <p class="track-info__artist">Imagine Dragons</p>
           </div>
         </button>
         <button class="catalog__item track">
@@ -92,8 +114,8 @@
             />
           </div>
           <div class="track__info track-info">
-            <p class="track__title">Dirt Femme</p>
-            <p class="track__artist">How Long</p>
+            <p class="track-info__title">Dirt Femme</p>
+            <p class="track-info__artist">How Long</p>
           </div>
         </button>
         <button class="catalog__item track">
@@ -107,8 +129,8 @@
             />
           </div>
           <div class="track__info track-info">
-            <p class="track__title">Another Love</p>
-            <p class="track__artist">Tom Odell</p>
+            <p class="track-info__title">Another Love</p>
+            <p class="track-info__artist">Tom Odell</p>
           </div>
         </button>
         <button class="catalog__item track">
@@ -122,8 +144,8 @@
             />
           </div>
           <div class="track__info track-info">
-            <p class="track__title">Born To Die</p>
-            <p class="track__artist">Lana Del Ray</p>
+            <p class="track-info__title">Born To Die</p>
+            <p class="track-info__artist">Lana Del Ray</p>
           </div>
         </button>
         <button class="catalog__item track">
@@ -137,8 +159,8 @@
             />
           </div>
           <div class="track__info track-info">
-            <p class="track__title">Hello</p>
-            <p class="track__artist">Adele</p>
+            <p class="track-info__title">Hello</p>
+            <p class="track-info__artist">Adele</p>
           </div>
         </button>
         <button class="catalog__item track">
@@ -152,8 +174,8 @@
             />
           </div>
           <div class="track__info track-info">
-            <p class="track__title">Can't Pretend</p>
-            <p class="track__artist">Tom Odell</p>
+            <p class="track-info__title">Can't Pretend</p>
+            <p class="track-info__artist">Tom Odell</p>
           </div>
         </button>
         <button class="catalog__item track">
@@ -167,8 +189,8 @@
             />
           </div>
           <div class="track__info track-info">
-            <p class="track__title">Young And Beautiful</p>
-            <p class="track__artist">Lana Del Ray</p>
+            <p class="track-info__title">Young And Beautiful</p>
+            <p class="track-info__artist">Lana Del Ray</p>
           </div>
         </button>
         <button class="catalog__item track">
@@ -182,8 +204,8 @@
             />
           </div>
           <div class="track__info track-info">
-            <p class="track__title">Someone Like You</p>
-            <p class="track__artist">Adele</p>
+            <p class="track-info__title">Someone Like You</p>
+            <p class="track-info__artist">Adele</p>
           </div>
         </button>
         <button class="catalog__item track">
@@ -197,8 +219,8 @@
             />
           </div>
           <div class="track__info track-info">
-            <p class="track__title">Natural</p>
-            <p class="track__artist">Imagine Dragons</p>
+            <p class="track-info__title">Natural</p>
+            <p class="track-info__artist">Imagine Dragons</p>
           </div>
         </button>
         <button class="catalog__item track">
@@ -212,8 +234,8 @@
             />
           </div>
           <div class="track__info track-info">
-            <p class="track__title">Laugh Now Cry Later</p>
-            <p class="track__artist">Drake</p>
+            <p class="track-info__title">Laugh Now Cry Later</p>
+            <p class="track-info__artist">Drake</p>
           </div>
         </button>
         <button class="catalog__item track">
@@ -227,8 +249,8 @@
             />
           </div>
           <div class="track__info track-info">
-            <p class="track__title">Frozen</p>
-            <p class="track__artist">Madonna</p>
+            <p class="track-info__title">Frozen</p>
+            <p class="track-info__artist">Madonna</p>
           </div>
         </button>
       </div>
@@ -236,12 +258,46 @@
     <section class="player player_active">
       <h2 class="visually-hidden">Плеер</h2>
       <div class="player__container">
-        <div class="track__info">
-          <p class="track__title"></p>
-          <p class="track__title"></p>
+        <div class="player__track-info track-info">
+          <p class="track__title">Save Your Tears</p>
+          <p class="track__artist">The Weeknd</p>
         </div>
+        <div class="player__controller">
+          <button class="player__icon player__icon_stop"></button>
+          <button class="player__icon player__icon_prev"></button>
+          <button class="player__icon player__icon_pause"></button>
+          <button class="player__icon player__icon_next"></button>
+          <button class="player__icon player__icon_like"></button>
+        </div>
+        <div class="player__progress-wrap">
+          <div class="player__progress">
+            <input
+              class="player__progress-input"
+              type="range"
+              min="0"
+              max="100"
+              value="0"
+            />
+          </div>
+          <p class="player__time">
+            <span class="player__time-passed">0:24</span>
+            <span>/</span>
+            <span class="player__time-total">4:31</span>
+          </p>
+        </div>
+        <div class="player__volume-wrap">
+          <div class="player__volume">
+            <input
+              class="player__volume-input"
+              type="range"
+              min="0"
+              max="100"
+              value="100"
+            />
+          </div>
+        </div>
+        <button class="player__icon player_-icon_mute"></button>
       </div>
-      <!-- 41-24 -->
     </section>
   </body>
 </html>
