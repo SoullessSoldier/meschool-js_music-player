@@ -3,6 +3,8 @@
 Мы вместе с тобой напишем полноценный музыкальный плеер \
  на html, css и javascript.
 
+Проект на Github Pages >>> https://soullesssoldier.github.io/meschool-js_music-player/
+
 **Что ты освоишь за 4 за дня:**
 
 - с нуля по макету из figma напишем вёрстку приложения;
