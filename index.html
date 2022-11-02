@@ -70,6 +70,7 @@
         </button>
       </div>
     </header>
+
     <section class="catalog">
       <h2 class="visually-hidden">Список треков</h2>
       <div class="catalog__container">
@@ -88,7 +89,7 @@
             <p class="track-info__artist">The Weeknd</p>
           </div>
         </button>
-        <button class="catalog__item track">
+        <button class="catalog__item track track_active">
           <div class="track__img-wrapper">
             <img
               class="track__poster"
@@ -253,14 +254,29 @@
             <p class="track-info__artist">Madonna</p>
           </div>
         </button>
+        <button class="catalog__btn-add">
+          <span>Увидеть все</span>
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8.59 16.59L13.17 12L8.59 7.41L10 6L16 12L10 18L8.59 16.59Z"
+            />
+          </svg>
+        </button>
       </div>
     </section>
+
     <section class="player player_active">
       <h2 class="visually-hidden">Плеер</h2>
       <div class="player__container">
         <div class="player__track-info track-info">
-          <p class="track__title">Save Your Tears</p>
-          <p class="track__artist">The Weeknd</p>
+          <p class="track-info__title">Save Your Tears</p>
+          <p class="track-info__artist">The Weeknd</p>
         </div>
         <div class="player__controller">
           <button class="player__icon player__icon_stop"></button>
@@ -295,8 +311,8 @@
               value="100"
             />
           </div>
+          <button class="player__icon player__icon_mute-on"></button>
         </div>
-        <button class="player__icon player_-icon_mute"></button>
       </div>
     </section>
   </body>

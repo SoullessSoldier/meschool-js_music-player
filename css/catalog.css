@@ -1,0 +1,19 @@
+.catalog__container {
+  max-width: 1236px;
+  padding: 0 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 196px);
+  gap: 4px;
+  justify-content: center;
+}
+
+.catalog__btn-add {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  font-weight: 600;
+  color: #fff;
+}

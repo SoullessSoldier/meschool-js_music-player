@@ -19,3 +19,15 @@
 
 Normalize.css
 сайт Favicon Generator https://realfavicongenerator.net/
+
+
+#### Day 2
+
+Пишем стили для проекта \
+DEFAULT.CSS \
+HEADER & LIST CARD \
+PLAYER
+
+TODO: Сделать hover на кнопках в плеере, \
+ hover можно сделать плавные в плеере для интерактивных элементов
+
