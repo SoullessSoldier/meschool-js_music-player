@@ -62,6 +62,10 @@
   background-image: url("../img/like_empty.svg");
 }
 
+.player__icon_like_active {
+  filter: drop-shadow(0 0 2px tomato);
+}
+
 .player__icon_mute-on {
   background-image: url("../img/volume_on.svg");
 }

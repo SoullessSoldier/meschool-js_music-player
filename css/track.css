@@ -1,3 +1,6 @@
+:root {
+  --icon-status: url(../img/pause.svg);
+}
 .track {
   padding: 6px;
   display: flex;
@@ -40,6 +43,11 @@
   opacity: 0;
 }
 
+.track__poster {
+  width: 180px;
+  height: 180px;
+}
+
 .track__info {
   padding: 14px 8px;
   width: 100%;
@@ -64,10 +72,14 @@
 }
 
 .track_active .track__img-wrapper::after {
-  background-image: url("../img/pause.svg");
+  background-image: var(--icon-status);
   transform: translate(-50%, -50%) rotateY(0);
   transition-property: background-color;
   opacity: 1;
+}
+
+.track_pause .track__img-wrapper::after {
+  background-image: url("../img/play_arrow.svg");
 }
 
 .track_active:hover .track__img-wrapper::after {
